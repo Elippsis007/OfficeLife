@@ -1,0 +1,82 @@
+:root {
+  --desktop-bg: #1a1a1a;
+  --window-bg: rgba(40, 40, 40, 0.95);
+  --accent: #4CAF50;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: var(--desktop-bg);
+  font-family: system-ui, sans-serif;
+  color: white;
+}
+
+.desktop {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.icons {
+  padding: 20px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  justify-content: start;
+  align-content: start;
+}
+
+.icon {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.icon:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.icon img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin: 0 auto 5px;
+}
+
+.window {
+  position: absolute;
+  background: var(--window-bg);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  min-width: 300px;
+}
+
+.window-header {
+  padding: 12px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 8px 8px 0 0;
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+}
+
+.window-content {
+  padding: 15px;
+}
+
+.taskbar {
+  background: rgba(0,0,0,0.8);
+  padding: 8px 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stats span {
+  margin-left: 15px;
+  padding: 5px 10px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}

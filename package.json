@@ -1,0 +1,9 @@
+{
+  "name": "desk-life",
+  "scripts": {
+    "dev": "vite"
+  },
+  "devDependencies": {
+    "vite": "^4.2.0"
+  }
+}
